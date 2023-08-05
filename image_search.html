@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image</title>
+        <style>
+            #image_search{
+                margin: 100px;
+            }
+            .responsive {
+            width: 100%;
+            height: auto;
+          }
+            .logo_google{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .search_bar{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 25px;
+                border: 1px solid #6c6c6b;
+                margin: 0 auto;
+                width: 60%;
+                height: 45px;
+                
+            }
+            input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 3px;
+         }
+         .back_button{
+            display: flex;
+            align-items: right;
+            justify-content: right;
+         }
+        </style>
+    </head>
+    <body>
+        <form class="back_button" action="index.html">
+            <input type="submit" value="Back to Google Search" />
+        </form>
+        <div id="image_search">
+        <div id="logo_image">
+            <div class="logo_google"><a href="index.html">
+            <img src ="https://images.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo " class="responsive"></a>
+        </div>
+        <form class="search_bar" action="https://images.google.com/images">
+            <input type="text" name="q">
+            <input type="submit" value="Image Search" hidden="true">
+        </form>
+    </div>
+    </body>
+</html>

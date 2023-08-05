@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+          #google{
+            padding: 100px;
+
+          }
+          .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            height: auto;
+          
+
+          }
+          .search{
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #6c6c6b;
+            margin: 0 auto;
+            width: 60%;
+            height: 45px;
+        
+          }
+          .responsive {
+            width: 100%;
+            height: auto;
+          }
+          .img{
+            margin: 10px;
+            float: right;
+          }
+          .adv{
+            margin: 10px;
+            float: right;
+          }
+          .feeling_lucky{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 3px;
+            
+         }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form class="img" action="image_search.html">
+                <input type="submit" value="Image Search" />
+            </form>
+            <form class="adv" action="advanced_search.html">
+                <input type="submit" value="Advanced Search" />
+            </form>
+        </div>
+    <div id="google">
+        <div class="logo">
+          <a href="index.html">
+        <img src ="https://images.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo" class="responsive"></a>
+      </div>
+    <div class="search">
+        <form action="https://www.google.com/search">
+            <input type="text" name="q">
+            <input type="submit" value="Google Search" hidden="true">
+        </form>
+    </div>
+    </div>
+    <div class="feeling_lucky">
+        </form>
+        <form class="adv" action="feeling_lucky_search.html">
+            <input type="submit" value="I feel lucky" />
+        </form>
+    </div>
+    
+    </body>
+</html>

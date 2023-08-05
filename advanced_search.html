@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style>
+            .logo_google{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            }
+            .responsive {
+            width: 100%;
+            height: auto;
+          }
+            #grid{
+                padding: 20px;
+                grid-column-gap: 20px;
+                grid-row-gap: 10px;
+                grid-template-columns: 200px 200px auto;
+            }
+            .grid-item{
+                font-size: 20px;
+                text-align: left;
+            }
+
+            input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4285f4;
+            color: #fff;
+            border-radius: 3px;
+         }
+         input[type="text"] {
+            width: 200px;
+            text-align: left;
+            border-radius: 1px;
+            border: 1px solid #d9d9d9;
+            border-top: 1px solid #c0c0c0;
+            font-size: 13px;
+            height: 25px;
+            padding: 1px 8px;
+         }
+         .instructions{
+            height: 30px;
+            display: table-cell;
+            vertical-align: middle;
+         }
+         .back_to_G{
+            display:flex;
+            align-items: right;
+            justify-content: right;
+            padding: 10px;
+         }
+        </style>
+    </head>
+    <body>
+        <form class="back_to_G" action="index.html">
+            <input type="submit" value="Back to Google Search" />
+        </form>
+            <div id="logo_google">
+                <div class="logo_google"><a href="index.html">
+                <img src ="https://images.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo " class="responsive"></a>
+            </div>
+            <div>
+                <h2>Advanced Search</h2>
+            </div>
+            <div id="advanced_request">
+                <h3>Find pages with...</h3>
+
+
+            <div id="grid">
+            <div class="grid-item">
+        <form class="instructions" action="https://www.google.es/search"> All these words:
+            <input type="text" name="as_q">
+            <input type="submit" value="Advanced Search" hidden="true"> Escribe las palabras importantes: terrier ratonero tricolor
+
+        </form>
+        </div>
+        </div>
+         <div id="grid">
+            <div class="grid-item">
+        <form class="instructions" action="https://www.google.es/search"> This exact word of phrase:
+            <input type="text" name="as_epq">
+            <input type="submit" value="Advanced Search" hidden="true"> Escribe las palabras exactas entre comillas: "terrier ratonero"
+        </form>
+        </div>
+        </div>
+         <div id="grid">
+            <div class="grid-item">
+        <form class="instructions" action="https://www.google.es/search"> Any of these words:
+            <input type="text" name="as_oq">
+            <input type="submit" value="Advanced Search" hidden="true"> Escribe OR entre todas las palabras que quieras: miniatura OR estándar
+        </form>
+        </div>
+        </div>
+         <div id="grid">
+            <div class="grid-item">
+        <form class="instructions" action="https://www.google.es/search"> None of these words:
+            <input type="text" name="as_eq">
+            <input type="submit" value="Advanced Search" hidden="true"> Añade un signo menos delante de las palabras que no quieras que aparezcan: -roedor, -"Jack Russell"
+        </form>
+        </div>
+        </div>
+    </body>
+</html>
